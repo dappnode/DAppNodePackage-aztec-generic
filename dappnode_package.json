@@ -2,7 +2,7 @@
   "upstream": [
     {
       "repo": "AztecProtocol/aztec-packages",
-      "version": "v0.87.2",
+      "version": "v0.87.4",
       "arg": "UPSTREAM_VERSION"
     }
   ],
@@ -25,11 +25,9 @@
   "bugs": {
     "url": "https://github.com/dappnode/DAppNodePackage-aztec-generic/issues"
   },
-    "globalEnvs": [
+  "globalEnvs": [
     {
-      "envs": [
-        "PUBLIC_IP"
-      ],
+      "envs": ["PUBLIC_IP"],
       "services": ["sequencer"]
     }
   ]

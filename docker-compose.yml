@@ -12,6 +12,7 @@ services:
       COINBASE: ""
       VALIDATOR_PRIVATE_KEYS: ""
       BLOB_SINK_URL: ""
+      SYNC_SNAPSHOTS_URL: ""
       LOG_LEVEL: "info"
     restart: unless-stopped
 volumes:

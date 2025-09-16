@@ -7,6 +7,7 @@ services:
     environment:
       ETHEREUM_HOSTS: http://geth.sepolia-geth.dappnode:8545
       L1_CONSENSUS_HOST_URLS: http://prysm-sepolia.dappnode:3500
+      SYNC_SNAPSHOTS_URL: https://aztec.denodes.xyz/snapshot/
     ports:
       - 40400:40400/tcp
       - 40400:40400/udp

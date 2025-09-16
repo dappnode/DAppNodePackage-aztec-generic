@@ -13,11 +13,27 @@ set -euo pipefail
 P2P_IP="${_DAPPNODE_GLOBAL_PUBLIC_IP}" # aztec expects P2P_IP to be set, but dappmanager injects the env as `_DAPPNODE_GLOBAL_PUBLIC_IP`
 export P2P_IP
 
+SYNC_SNAPSHOTS_URL=https://aztec.denodes.xyz/snapshot/
+export SYNC_SNAPSHOTS_URL
+
 # — Build the command array
 FLAGS=(
   start
   --network "$NETWORK"
 )
+
+# — Create target directory and download snapshot only if empty
+# mkdir -p /root/.aztec/alpha-testnet
+if [ -z "$(ls -A /data/aztec-alpha-testnet.tar.lz4)" ]; then
+    echo "[INFO - entrypoint] Target folder is empty, downloading snapshot..."
+    wget https://files5.blacknodes.net/aztec/aztec-alpha-testnet.tar.lz4 -O /data/aztec-alpha-testnet.tar.lz4
+    lz4 -d /data/aztec-alpha-testnet.tar.lz4 /data/aztec-alpha-testnet.tar
+    tar -xvf /data/aztec-alpha-testnet.tar -C /
+    rm /data/aztec-alpha-testnet.tar.lz4 /data/aztec-alpha-testnet.tar
+    echo "[INFO - entrypoint] Snapshot download and extraction completed"
+else
+    echo "[INFO - entrypoint] Target folder is not empty, skipping snapshot download"
+fi
 
 # — Append fixed mode flags
 FLAGS+=(--archiver --node --sequencer)

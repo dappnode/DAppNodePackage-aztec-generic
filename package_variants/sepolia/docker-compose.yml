@@ -3,7 +3,7 @@ services:
   sequencer:
     build:
       args:
-        NETWORK: "alpha-testnet"
+        NETWORK: "testnet"
     environment:
       ETHEREUM_HOSTS: http://geth.sepolia-geth.dappnode:8545
       L1_CONSENSUS_HOST_URLS: http://prysm-sepolia.dappnode:3500

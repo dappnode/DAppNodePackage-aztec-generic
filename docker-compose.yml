@@ -4,7 +4,7 @@ services:
     build:
       context: sequencer
       args:
-        UPSTREAM_VERSION: 1.2.1
+        UPSTREAM_VERSION: 2.0.2
         DATA_DIRECTORY: /data
     volumes:
       - sequencer-data:/data

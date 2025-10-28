@@ -7,6 +7,7 @@ services:
     environment:
       ETHEREUM_HOSTS: http://geth.sepolia-geth.dappnode:8545
       L1_CONSENSUS_HOST_URLS: http://prysm-sepolia.dappnode:3500
+      GOVERNANCE_PROPOSER_PAYLOAD_ADDRESS: "0xDCd9DdeAbEF70108cE02576df1eB333c4244C666"
     ports:
       - 40400:40400/tcp
       - 40400:40400/udp

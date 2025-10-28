@@ -11,6 +11,7 @@ services:
     environment:
       COINBASE: ""
       VALIDATOR_PRIVATE_KEYS: ""
+      GOVERNANCE_PROPOSER_PAYLOAD_ADDRESS: ""
       BLOB_SINK_URL: ""
       LOG_LEVEL: info
     restart: unless-stopped

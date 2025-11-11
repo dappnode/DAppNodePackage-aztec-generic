@@ -4,14 +4,13 @@ services:
     build:
       context: sequencer
       args:
-        UPSTREAM_VERSION: v2.0.4
+        UPSTREAM_VERSION: v2.1.2
         DATA_DIRECTORY: /data
     volumes:
       - sequencer-data:/data
     environment:
       COINBASE: ""
       VALIDATOR_PRIVATE_KEYS: ""
-      BLOB_SINK_URL: ""
       LOG_LEVEL: info
     restart: unless-stopped
 volumes:

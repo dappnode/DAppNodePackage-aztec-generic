@@ -8,10 +8,14 @@ services:
         DATA_DIRECTORY: /data
     volumes:
       - sequencer-data:/data
+      - keystore-data:/keystore
     environment:
+      KEY_STORE_DIRECTORY: /keystore
+      DATA_DIRECTORY: /data
       COINBASE: ""
       VALIDATOR_PRIVATE_KEYS: ""
       LOG_LEVEL: info
     restart: unless-stopped
 volumes:
   sequencer-data: {}
+  keystore-data: {}

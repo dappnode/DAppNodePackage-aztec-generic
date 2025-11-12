@@ -4,8 +4,6 @@ set -euo pipefail
 # — Required environment variables
 : "${ETHEREUM_HOSTS?Need to set ETHEREUM_HOSTS}"
 : "${L1_CONSENSUS_HOST_URLS?Need to set L1_CONSENSUS_HOST_URLS}"
-: "${VALIDATOR_PRIVATE_KEYS?Need to set VALIDATOR_PRIVATE_KEYS}"
-: "${COINBASE?Need to set COINBASE}"
 : "${_DAPPNODE_GLOBAL_PUBLIC_IP?Need to set _DAPPNODE_GLOBAL_PUBLIC_IP (your public IP)}"
 : "${NETWORK?Need to set NETWORK (build arg)}"
 : "${LOG_LEVEL:=info}"

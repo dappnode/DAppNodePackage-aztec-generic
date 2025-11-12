@@ -30,7 +30,7 @@ fields:
       service: [sequencer]
     title: Validator Private Key - DEPRECATED, just for backup purposes
     description: "Private key of testnet L1 EOA that holds Sepolia ETH (0.01 Sepolia ETH can get you started)"
-    required: true
+    required: false
     secret: true
     pattern: '^0x[a-fA-F0-9]{64}$'
     patternErrorMessage: "Please enter a valid private key (0x followed by 64 hexadecimal characters)"
@@ -42,6 +42,6 @@ fields:
       service: [sequencer]
     title: Coinbase Address - DEPRECATED, just for backup purposes
     description: "Recipient of block rewards (for node security on mainnet, this should be a different address to the validator eoa)"
-    required: true
+    required: false
     pattern: '^0x[a-fA-F0-9]{40}$'
     patternErrorMessage: "Please enter a valid Ethereum address (0x followed by 40 hexadecimal characters)"

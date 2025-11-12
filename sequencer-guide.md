@@ -74,29 +74,9 @@ Make sure to add `--subscribe-all-data-subnets` in your Beacon Chain package:
 
 Before you can join the party as a sequencer, you gotta approve the Aztec rollup contract to spend 200,000 STAKE tokens. That's your ticket to the show! 🎫
 
-### Step 1️⃣: Connect to Your DAppNode via SSH
+In order to perform this step you will need to install foundry in your computer (there will be a UI later on to perform this step, but for now you'll need to use CLI).
 
-Open your terminal and SSH into your DAppNode:
-
-```bash
-ssh root@dappnode.local
-```
-
-Or use your DAppNode's IP address if the hostname doesn't resolve:
-
-```bash
-ssh root@<your-dappnode-ip>
-```
-
-### Step 2️⃣: Access the Aztec Container
-
-Once connected, access the Aztec sequencer container using Docker:
-
-```bash
-docker exec -it DAppNodePackage-sequencer.aztec-sepolia.dnp.dappnode.eth /bin/bash
-```
-
-You're now inside the Aztec container! 🐳 From here, you can execute transactions directly.
+You can install foundry following [the instructions in their repo](https://github.com/foundry-rs/foundry)
 
 ### Step 3️⃣: Execute the Approval Transaction
 

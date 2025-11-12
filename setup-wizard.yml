@@ -28,7 +28,7 @@ fields:
       type: environment
       name: VALIDATOR_PRIVATE_KEYS
       service: [sequencer]
-    title: Validator Private Key
+    title: Validator Private Key - DEPRECATED, just for backup purposes
     description: "Private key of testnet L1 EOA that holds Sepolia ETH (0.01 Sepolia ETH can get you started)"
     required: true
     secret: true
@@ -40,7 +40,7 @@ fields:
       type: environment
       name: COINBASE
       service: [sequencer]
-    title: Coinbase Address
+    title: Coinbase Address - DEPRECATED, just for backup purposes
     description: "Recipient of block rewards (for node security on mainnet, this should be a different address to the validator eoa)"
     required: true
     pattern: '^0x[a-fA-F0-9]{40}$'

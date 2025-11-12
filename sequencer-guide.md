@@ -123,6 +123,7 @@ Open the `...staker_output.json` file and you will find the address in the "atte
 ### Attester ETH Funding 💸
 
 Make sure your Attester Ethereum address has enough ETH to cover gas fees. Grab some from a testnet faucet or transfer from your funded account.
+Faucets for testnet [here](https://sepolia-faucet.pk910.de/) and [here](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
 
 ### Publisher Configuration 📤
 

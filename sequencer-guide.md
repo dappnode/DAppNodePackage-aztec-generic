@@ -44,6 +44,8 @@ aztec validator-keys new \
 --data-dir ./
 ```
 
+Please note that `--fee-recipient` needs to be an Aztec address, not an Ethereum address. It's OK to leave it as 0x00... for now because there are no txs in the Ignition phase (so no tx fees) and can be changed later.
+
 ### Step 4️⃣: Upload Keystore to DAppNode
 
 1. Navigate to your **DAppNode Packages Tab** 📁

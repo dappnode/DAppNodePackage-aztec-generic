@@ -39,9 +39,12 @@ Example:
 
 ```bash
 aztec validator-keys new \
---fee-recipient 0x0000000000000000000000000000000000000000000000000000000000000000 \
---mnemonic "<MNEMONIC>" \
---data-dir ./
+  --fee-recipient 0x0000000000000000000000000000000000000000000000000000000000000000 \
+  --staker-output \
+  --gse-address 0xfb243b9112bb65785a4a8edaf32529accf003614 \ # Check in Aztec's documentation for the correct GSE address
+  --mnemonic "<MNEMONIC>" \
+  --l1-rpc-urls http://geth.sepolia-geth.dappnode:8545 \ # or any execution RPC
+  --data-dir ./
 ```
 
 Please note that `--fee-recipient` needs to be an Aztec address, not an Ethereum address. It's OK to leave it as 0x00... for now because there are no txs in the Ignition phase (so no tx fees) and can be changed later.

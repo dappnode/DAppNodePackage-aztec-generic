@@ -78,7 +78,7 @@ In order to perform this step you will need to install foundry in your computer 
 
 You can install foundry following [the instructions in their repo](https://github.com/foundry-rs/foundry)
 
-### Step 3️⃣: Execute the Approval Transaction
+### Step 1️⃣: Execute the Approval Transaction
 
 Now execute the approval transaction from within the container:
 

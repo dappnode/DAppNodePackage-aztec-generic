@@ -113,6 +113,8 @@ Alright, moment of truth! 🎬 Let's register your validator on the Aztec networ
 
 Run this bad boy replacing the placeholders with your data and become a sequencer:
 
+Note: `bls-secret-key` can be found in the file `key1.json` under the "bls" section.
+
 ```bash
 aztec \
   add-l1-validator \

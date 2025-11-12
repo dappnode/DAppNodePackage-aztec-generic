@@ -2,7 +2,7 @@
   "upstream": [
     {
       "repo": "AztecProtocol/aztec-packages",
-      "version": "v2.1.2",
+      "version": "v2.1.3",
       "arg": "UPSTREAM_VERSION"
     }
   ],
@@ -44,6 +44,13 @@
       "services": [
         "sequencer"
       ]
+    }
+  ],
+  "backup": [
+    {
+      "name": "keystore",
+      "path": "/keystore",
+      "service": "sequencer"
     }
   ]
 }

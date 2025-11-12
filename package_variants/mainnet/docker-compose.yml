@@ -1,0 +1,12 @@
+version: "3.5"
+services:
+  sequencer:
+    build:
+      args:
+        NETWORK: "mainnet"
+    environment:
+      ETHEREUM_HOSTS: http://execution.mainnet.dncore.dappnode:8545
+      L1_CONSENSUS_HOST_URLS: http://beacon-chain.mainnet.dncore.dappnode:3500
+    ports:
+      - 40400:40400/tcp
+      - 40400:40400/udp

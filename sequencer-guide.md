@@ -77,6 +77,9 @@ Before you can join the party as a sequencer, you gotta approve the Aztec rollup
 In order to perform this step you will need to install foundry in your computer (there will be a UI later on to perform this step, but for now you'll need to use CLI).
 
 You can install foundry following [the instructions in their repo](https://github.com/foundry-rs/foundry)
+```bash
+curl -L https://foundry.paradigm.xyz | bash
+```
 
 ### Step 1️⃣: Execute the Approval Transaction
 
@@ -95,7 +98,7 @@ Sit tight ⏳ and wait for the transaction to be confirmed on-chain. Grab some c
 
 ---
 
-## 💰 Phase 4: Fund Your Attester & Configure Publisher
+## 💰 Phase 4: Fund Your Attester
 
 Your attester address has been generated with the command in Step 3️⃣. Specifically in the `keyn_attestern_staker_output.json`, where `n` is the index of the key you've generated (1, for most of us who only generate 1).
 Open the `...staker_output.json` file and you will find the address in the "attester" field. 
@@ -133,18 +136,6 @@ You can check the status of your sequencer in https://testnet.dashtec.xyz. Remem
 
 ---
 
-## 📋 Progress Checklist
-
-| Phase | Task | Status |
-|-------|------|--------|
-| 1️⃣ | Install DAppNode Aztec package | ☐ |
-| 2️⃣ | Generate and upload keystore | ☐ |
-| 3️⃣ | Connect to DAppNode & approve 200k STAKE | ☐ |
-| 4️⃣ | Fund Attester and configure Publisher | ☐ |
-| 5️⃣ | Register as validator via CLI | ☐ |
-
----
-
 ## 🔒 Security Best Practices
 
 - **🚫 Never ever share** your mnemonic or private keys with anyone, period
@@ -152,7 +143,6 @@ You can check the status of your sequencer in https://testnet.dashtec.xyz. Remem
 - **💼 Hardware wallet time** — consider using hardware wallets for your withdrawal and attester addresses
 - **🧪 Test first** — run everything through testnet before going anywhere near mainnet
 - **👀 Keep an eye** on your sequencer logs regularly through DAppNode's dashboard
-- **🔌 SSH Security** — use SSH keys instead of passwords when connecting to your DAppNode for extra security
 
 ---
 

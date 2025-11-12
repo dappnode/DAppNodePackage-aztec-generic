@@ -45,5 +45,12 @@
         "sequencer"
       ]
     }
+  ],
+  "backup": [
+    {
+      "name": "keystore",
+      "path": "/keystore",
+      "service": "sequencer"
+    }
   ]
 }

@@ -5,8 +5,8 @@ services:
       args:
         NETWORK: "testnet"
     environment:
-      ETHEREUM_HOSTS: http://geth.sepolia-geth.dappnode:8545
-      L1_CONSENSUS_HOST_URLS: http://prysm-sepolia.dappnode:3500
+      ETHEREUM_HOSTS: http://execution.sepolia.dncore.dappnode:8555
+      L1_CONSENSUS_HOST_URLS: http://beacon-chain.sepolia.dncore.dappnode:3500
       P2P_PORT: 40401
     ports:
       - 40401:40401/tcp

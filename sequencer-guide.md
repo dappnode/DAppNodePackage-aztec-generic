@@ -55,6 +55,11 @@ Please note that `--fee-recipient` needs to be an Aztec address, not an Ethereum
 
 Boom! 💥 Your keystore is now locked and loaded, ready for your Aztec sequencer to use.
 
+If your logs show this error:
+```
+[17:55:44.683] WARN: node:blob-sink:client Unable to get blob sidecar for XXXXXXX: Not Found (404) {"status":404,"statusText":"Not Found","body":"{\"message\":\"Block not found: the node does not custody enough data columns to reconstruct blobs - please start the beacon node with the `--subscribe-all-data-subnets` flag to ensure this call to succeed, or retry later if it is already the case\",\"code\":404}"}
+```
+
 ---
 
 ## ✅ Phase 3: Approve STAKE Token Spending

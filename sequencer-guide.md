@@ -59,6 +59,11 @@ If your logs show this error:
 ```
 [17:55:44.683] WARN: node:blob-sink:client Unable to get blob sidecar for XXXXXXX: Not Found (404) {"status":404,"statusText":"Not Found","body":"{\"message\":\"Block not found: the node does not custody enough data columns to reconstruct blobs - please start the beacon node with the `--subscribe-all-data-subnets` flag to ensure this call to succeed, or retry later if it is already the case\",\"code\":404}"}
 ```
+Make sure to add `--subscribe-all-data-subnets` in your Beacon Chain package:
+
+<img width="1227" height="528" alt="Screenshot 2025-11-12 at 15 00 40" src="https://github.com/user-attachments/assets/2d319f55-72e3-4ba4-a09b-b642b0c02369" />
+<img width="1051" height="298" alt="Screenshot 2025-11-12 at 14 58 47" src="https://github.com/user-attachments/assets/29228b57-ba10-4a59-bb30-fb31a3442e48" />
+
 
 ---
 

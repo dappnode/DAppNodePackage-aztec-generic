@@ -117,6 +117,9 @@ Sit tight ⏳ and wait for the transaction to be confirmed on-chain. Grab some c
 
 ## 💰 Phase 4: Fund Your Attester & Configure Publisher
 
+Your attester address has been generated with the command in Step 3️⃣. Specifically in the `keyn_attestern_staker_output.json`, where `n` is the index of the key you've generated (1, for most of us who only generate 1).
+Open the `...staker_output.json` file and you will find the address in the "attester" field. 
+
 ### Attester ETH Funding 💸
 
 Make sure your Attester Ethereum address has enough ETH to cover gas fees. Grab some from a testnet faucet or transfer from your funded account.

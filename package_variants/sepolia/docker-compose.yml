@@ -8,7 +8,6 @@ services:
       ETHEREUM_HOSTS: http://execution.sepolia.dncore.dappnode:8545
       L1_CONSENSUS_HOST_URLS: http://beacon-chain.sepolia.dncore.dappnode:3500
       P2P_PORT: 40401
-      GOVERNANCE_PROPOSER_PAYLOAD_ADDRESS: ""
     ports:
       - 40401:40401/tcp
       - 40401:40401/udp

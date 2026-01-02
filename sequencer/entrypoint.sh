@@ -20,6 +20,23 @@ FLAGS=(
 # — Append fixed mode flags
 FLAGS+=(--archiver --node --sequencer)
 
+# — Append any extra options provided by the user in EXTRA_OPTS
+# If EXTRA_OPTS is set, split it the same way the shell would and append
+# each resulting token to the FLAGS array. This preserves quoted groups.
+if [ -n "${EXTRA_OPTS:-}" ]; then
+  # Disable pathname expansion while splitting
+  set -f
+  # shellcheck disable=SC2206
+  # Use eval to allow users to provide quoted options like '--flag "some value"'
+  eval "EXTRA_ARR=( $EXTRA_OPTS )"
+  # Re-enable pathname expansion
+  set +f
+
+  for opt in "${EXTRA_ARR[@]:-}"; do
+    FLAGS+=("$opt")
+  done
+fi
+
 echo "[INFO - entrypoint] Starting sequencer with flags:"
 printf '  %q\n' "${FLAGS[@]}"
 

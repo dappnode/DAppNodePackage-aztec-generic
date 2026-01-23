@@ -12,6 +12,7 @@ services:
     environment:
       KEY_STORE_DIRECTORY: /keystore
       DATA_DIRECTORY: /data
+      GOVERNANCE_PROPOSER_PAYLOAD_ADDRESS: ""
       P2P_MAX_PEERS: ""
       L1_GAS_PRICE_MAX: ""
       L1_BLOB_FEE_PER_GAS_MAX: ""

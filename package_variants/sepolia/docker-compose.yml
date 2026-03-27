@@ -7,7 +7,9 @@ services:
     environment:
       ETHEREUM_HOSTS: http://execution.sepolia.dncore.dappnode:8545
       L1_CONSENSUS_HOST_URLS: http://beacon-chain.sepolia.dncore.dappnode:3500
+      BLOB_ARCHIVE_API_URL: https://api.sepolia.blobscan.com
       P2P_PORT: 40401
     ports:
       - 40401:40401/tcp
       - 40401:40401/udp
+      - 8880:8880

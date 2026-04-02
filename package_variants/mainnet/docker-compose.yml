@@ -7,6 +7,8 @@ services:
     environment:
       ETHEREUM_HOSTS: http://execution.mainnet.dncore.dappnode:8545
       L1_CONSENSUS_HOST_URLS: http://beacon-chain.mainnet.dncore.dappnode:3500
+      BLOB_ARCHIVE_API_URL: https://api.blobscan.com
     ports:
       - 40400:40400/tcp
       - 40400:40400/udp
+      - 8880:8880

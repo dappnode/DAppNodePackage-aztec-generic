@@ -12,6 +12,8 @@ For Sepolia:
 - [Install Prysm](http://my.dappnode/installer/dnp/prysm-sepolia.dnp.dappnode.eth)
 - [Install Geth](http://my.dappnode/installer/dnp/sepolia-geth.dnp.dappnode.eth)
 
+For blobs data retrieval purposes, if your Beacon node has access to `semi-supernodes` capabilities, add the `--semi-supernode` flag to the Beacon Chain `EXTRA_OPTS` variable in the config section. Otherwise, the package includes support to Blobscan API for backup blob data source.
+
 
 ### Package Details
 

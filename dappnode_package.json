@@ -2,7 +2,7 @@
   "upstream": [
     {
       "repo": "AztecProtocol/aztec-packages",
-      "version": "v4.2.1",
+      "version": "v4.3.0",
       "arg": "UPSTREAM_VERSION"
     }
   ],

@@ -15,7 +15,7 @@ jobs:
     name: Build test
     if: github.event_name != 'push'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - run: npx @dappnode/dappnodesdk build --variant sepolia --skip_save
 
   # e2e-test:
@@ -24,7 +24,7 @@ jobs:
   #   if: github.event_name != 'push'
   #   name: End to end tests
   #   steps:
-  #     - uses: actions/checkout@v4
+  #     - uses: actions/checkout@v6
   #     - run: npx @dappnode/dappnodesdk@latest github-action test-end-to-end --errorLogsTimeout 120 --healthCheckUrl http://beacon-chain.prysm.dappnode:3500/eth/v1/beacon/genesis --network mainnet --environmentByService="{\"beacon-chain\":{\"CHECKPOINT_SYNC_URL\":\"https://checkpoint-sync.dappnode.io\"}}"
 
   release:
@@ -32,8 +32,8 @@ jobs:
     runs-on: ipfs-dev-gateway
     if: github.event_name == 'push' || github.event_name == 'repository_dispatch'
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
           node-version: '22'
       - name: Publish

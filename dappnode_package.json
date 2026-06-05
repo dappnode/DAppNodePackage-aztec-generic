@@ -1,41 +1,56 @@
 {
-  "upstream": [
-    {
-      "repo": "AztecProtocol/aztec-packages",
-      "version": "v4.3.0",
-      "arg": "UPSTREAM_VERSION"
-    }
+  "architectures": [
+    "linux/amd64",
+    "linux/arm64"
   ],
-  "description": "Aztec is a privacy first L2 on Ethereum",
-  "type": "service",
-  "architectures": ["linux/amd64", "linux/arm64"],
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
-  "categories": ["Blockchain", "ETH2.0"],
-  "keywords": ["aztec", "validator", "rollup", "privacy"],
-  "links": {
-    "homepage": "https://aztec.network",
-    "readme": "https://github.com/DAppNode/DAppNodePackage-aztec-generic#readme",
-    "docs": "https://docs.aztec.network"
-  },
-  "license": "Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/DAppNode/DAppNodePackage-aztec-generic.git"
-  },
-  "bugs": {
-    "url": "https://github.com/dappnode/DAppNodePackage-aztec-generic/issues"
-  },
-  "globalEnvs": [
-    {
-      "envs": ["PUBLIC_IP"],
-      "services": ["sequencer"]
-    }
-  ],
   "backup": [
     {
       "name": "keystore",
       "path": "/keystore",
       "service": "sequencer"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/dappnode/DAppNodePackage-aztec-generic/issues"
+  },
+  "categories": [
+    "Blockchain",
+    "ETH2.0"
+  ],
+  "description": "Aztec is a privacy first L2 on Ethereum",
+  "globalEnvs": [
+    {
+      "envs": [
+        "PUBLIC_IP"
+      ],
+      "services": [
+        "sequencer"
+      ]
+    }
+  ],
+  "keywords": [
+    "aztec",
+    "validator",
+    "rollup",
+    "privacy"
+  ],
+  "license": "Apache-2.0",
+  "links": {
+    "docs": "https://docs.aztec.network",
+    "homepage": "https://aztec.network",
+    "readme": "https://github.com/DAppNode/DAppNodePackage-aztec-generic#readme"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DAppNode/DAppNodePackage-aztec-generic.git"
+  },
+  "type": "service",
+  "upstream": [
+    {
+      "arg": "UPSTREAM_VERSION",
+      "repo": "AztecProtocol/aztec-packages",
+      "version": "v4.3.1"
     }
   ]
 }

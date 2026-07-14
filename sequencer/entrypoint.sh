@@ -18,7 +18,7 @@ FLAGS=(
 )
 
 # — Append fixed mode flags
-FLAGS+=(--archiver --node --sequencer)
+FLAGS+=(--node --sequencer)
 
 # — Append any extra options provided by the user in EXTRA_OPTS
 # If EXTRA_OPTS is set, split it the same way the shell would and append

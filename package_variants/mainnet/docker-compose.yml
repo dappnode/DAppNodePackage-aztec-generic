@@ -3,6 +3,8 @@ services:
   sequencer:
     build:
       args:
+        UPSTREAM_IMAGE: aztecprotocol/aztec
+        UPSTREAM_VERSION: v6.0.0-rc.1
         NETWORK: "mainnet"
     environment:
       ETHEREUM_HOSTS: http://execution.mainnet.dncore.dappnode:8545

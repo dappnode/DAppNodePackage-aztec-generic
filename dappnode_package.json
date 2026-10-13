@@ -50,7 +50,7 @@
     {
       "arg": "UPSTREAM_VERSION",
       "repo": "aztec-labs-eng/aztec-node",
-      "version": "v6.0.0-rc.1"
+      "version": "v6.0.0"
     }
   ]
 }

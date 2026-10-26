@@ -49,8 +49,8 @@
   "upstream": [
     {
       "arg": "UPSTREAM_VERSION",
-      "repo": "AztecProtocol/aztec-packages",
-      "version": "v5.2.0"
+      "repo": "aztec-labs-eng/aztec-node",
+      "version": "v6.0.0"
     }
   ]
 }
